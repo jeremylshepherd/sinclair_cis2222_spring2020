@@ -1,0 +1,13 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+#Lab02 form fieldset {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgba(25, 25, 25, 0.4);
+}
+
+    #Lab02 form fieldset legend {
+        width: 200px;
+    }

@@ -24,36 +24,38 @@
         <h3>Interest Rate Calculator (Lab #02)</h3>
         <hr />
         <form class="form-group" id="form2" runat="server">
-            <span>Interest Calculator</span>
-            <div class="form-group row">
-                <asp:Label ID="LoanAmoutLabel" class="col-sm-2 col-form-label" runat="server" Text="Loan Amount" AssociatedControlID="LoanAmountInput" AccessKey="N"></asp:Label>
-                <div class="col-sm-5">
-                    <asp:TextBox ID="LoanAmountInput" class="form-control" runat="server" Columns="15" MaxLength="15"></asp:TextBox>
+            <fieldset>
+                <legend>Interest Calculator</legend>
+                <div class="form-group row">
+                    <asp:Label ID="LoanAmoutLabel" class="col-sm-2 col-form-label" runat="server" Text="Loan Amount" AssociatedControlID="LoanAmountInput" AccessKey="N"></asp:Label>
+                    <div class="col-sm-5">
+                        <asp:TextBox ID="LoanAmountInput" class="form-control" runat="server" Columns="15" MaxLength="15"></asp:TextBox>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <asp:Label ID="InterestRateLabel" class="col-sm-2 col-form-label" Text="Interest Rate" runat="server" AssociatedControlID="InterestRateInput" />
-                <div class="col-sm-5">
-                    <asp:RadioButtonList ID="InterestRateInput" class="form-check-input" runat="server">
-                        <asp:ListItem Value=".05">5%</asp:ListItem>
-                        <asp:ListItem Value=".06">6%</asp:ListItem>
-                        <asp:ListItem Value=".07" Selected="true">7%</asp:ListItem>
-                    </asp:RadioButtonList>
+                <div class="form-group row">
+                    <asp:Label ID="InterestRateLabel" class="col-sm-2 col-form-label" Text="Interest Rate" runat="server" AssociatedControlID="InterestRateInput" />
+                    <div class="col-sm-5">
+                        <asp:RadioButtonList ID="InterestRateInput" class="form-check-input" runat="server">
+                            <asp:ListItem Value=".05">5%</asp:ListItem>
+                            <asp:ListItem Value=".06">6%</asp:ListItem>
+                            <asp:ListItem Value=".07" Selected="true">7%</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <asp:Label ID="LoanTermLabel" class="col-sm-2 col-form-label" Text="Number of Years" runat="server" AssociatedControlID="TermInput" />
-                <div class="col-sm-5">
-                    <asp:DropDownList ID="TermInput" class="form-check-input" runat="server">
-                        <asp:ListItem Value="10">10</asp:ListItem>
-                        <asp:ListItem Value="15">15</asp:ListItem>
-                        <asp:ListItem Selected="true" Value="20">20</asp:ListItem>
-                    </asp:DropDownList>
+                <div class="form-group row">
+                    <asp:Label ID="LoanTermLabel" class="col-sm-2 col-form-label" Text="Number of Years" runat="server" AssociatedControlID="TermInput" />
+                    <div class="col-sm-5">
+                        <asp:DropDownList ID="TermInput" class="form-check-input" runat="server">
+                            <asp:ListItem Value="10">10</asp:ListItem>
+                            <asp:ListItem Value="15">15</asp:ListItem>
+                            <asp:ListItem Selected="true" Value="20">20</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
                 </div>
-            </div>
-            <asp:Button ID="CalcSubmit" class="btn btn-primary btn-lg" Text="Calculate Interest" runat="server" OnClick="CalcButton_Click" />
-            <asp:Button ID="CalcClear" class="btn btn-danger btn-lg" Text="Reset" runat="server" OnClick="ResetButton_Click" /><br />
-            <asp:Label ID="MortgageLabel" Text="" runat="server" Visible="false" />
+                <asp:Button ID="CalcSubmit" class="btn btn-primary btn-lg" Text="Calculate Interest" runat="server" OnClick="CalcButton_Click" />
+                <asp:Button ID="CalcClear" class="btn btn-danger btn-lg" Text="Reset" runat="server" OnClick="ResetButton_Click" /><br />
+                <asp:Label ID="MortgageLabel" Text="" runat="server" Visible="false" />
+            </fieldset>
         </form>
     </div>    
         

@@ -38,6 +38,7 @@
     <Content Include="Content\bootstrap.flatly.min.css" />
     <Content Include="Content\bootstrap.flatly.css" />
     <Content Include="packages.config" />
+    <Content Include="lib\styles.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -49,7 +50,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="README.MD" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
